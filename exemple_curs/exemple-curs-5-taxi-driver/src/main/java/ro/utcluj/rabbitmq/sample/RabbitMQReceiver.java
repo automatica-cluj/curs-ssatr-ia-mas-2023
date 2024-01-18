@@ -31,6 +31,7 @@ public class RabbitMQReceiver implements DeliverCallback{
 
         System.out.println("Start consuming messages...");
         channel.basicConsume(QUEUE_NAME, true, this, consumerTag -> { });
+        System.out.println("DUPA CALL CONSUME");
     }
     
    
